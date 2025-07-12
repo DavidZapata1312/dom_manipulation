@@ -2,8 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/style.css">
     <title>Formulario con Vite</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
     <h1>Formulario de Usuario</h1>
@@ -17,11 +17,9 @@
 
       <button type="submit">Guardar Datos</button>
     </form>
+    <p id="error-msg"></p>
 
     <button id="clear-data">Limpiar Datos</button>
-
-    <!-- 💡 Este es el que te hacía falta -->
-    <p id="error-msg"></p>
 
     <h2>Datos almacenados:</h2>
     <p id="user-data"></p>
@@ -29,6 +27,6 @@
     <h2>Contador de interacciones (Session Storage):</h2>
     <p id="interaction-count">0</p>
 
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
