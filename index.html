@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Formulario con Vite</title>
+  </head>
+  <body>
+    <h1>Formulario de Usuario</h1>
+
+    <form id="user-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="age">Edad:</label>
+      <input type="number" id="age" name="age" required /><br /><br />
+
+      <button type="submit">Guardar Datos</button>
+    </form>
+
+    <button id="clear-data">Limpiar Datos</button>
+
+    <!-- 💡 Este es el que te hacía falta -->
+    <p id="error-msg"></p>
+
+    <h2>Datos almacenados:</h2>
+    <p id="user-data"></p>
+
+    <h2>Contador de interacciones (Session Storage):</h2>
+    <p id="interaction-count">0</p>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
